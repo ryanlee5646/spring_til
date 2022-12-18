@@ -20,3 +20,20 @@ public class MemberController {
         this.memberService = memberService;
     }
 }
+
+/**
+* DI의 방법 3가지
+ 1. 생성자 주입 (가장 권장)
+    @Autowired
+    public MemberController(MemberService memberService) {
+         this.memberService = memberService;
+    }
+ 2. 필드 주입 (권장하는 방법은 아님)
+   @Autowired private MemberService memberService;
+
+ 3. Set 주입 (누군가가 컨트롤러를 호출할 때 항상 public으로 열려 있어야한다.)
+    @Autowired
+    public void setMemberService(MemberService memberService) {
+        this.memberService = memberService;
+    }
+ */

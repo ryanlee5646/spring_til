@@ -11,10 +11,10 @@ import java.util.Optional;
 
 // cmd+shift+T 단축기를 사용하게되면 Test를 쉽게 할 수 있음
 
-@Service // 이렇게 해야 스프링컨테이너에 등록해서 쓸 수 있게 함
+//@Service // 이렇게 해야 스프링컨테이너에 등록해서 쓸 수 있게 함
 public class MemberService {
     private final MemberRepository memberRepository;
-    @Autowired // 이것 역시 MemberService가 호출될 때 mmberRepository를 주입시켜줌
+//    @Autowired // 이것 역시 MemberService가 호출될 때 mmberRepository를 주입시켜줌
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
