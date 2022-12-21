@@ -1,14 +1,15 @@
 package hello.hellospring.controller;
 
 public class MemberForm {
-    private String name1;
+    private String name;
 
     public String getName() {
-        return name1;
+        return name;
     }
 
     public void setName(String name) {
-        this.name1 = name;
+
+        this.name = name;
     }
 
 
